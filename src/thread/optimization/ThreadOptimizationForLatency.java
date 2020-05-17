@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Latency is the time required to transmit a packet across a network.
+ * 
  * The idea of ​​this example is to take the original image of flowers, where we
  * have purple and white flowers and make them all purple, using single thread
  * and also using multithreads.
@@ -47,7 +49,8 @@ public class ThreadOptimizationForLatency {
 		// Multithread:
 		startTime = System.currentTimeMillis();
 
-		// If you will change the numberOfThreads value, please look at the class comment :)
+		// If you will change the numberOfThreads value, please look at the class
+		// comment :)
 		final int numberOfThreads = 4;
 		recolorMultithreaded(originalImage, resultImage, numberOfThreads);
 
