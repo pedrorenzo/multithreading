@@ -21,6 +21,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * - If a thread obtains the writeLock, none can obtain the readLock.
  * - If at least one thread obtains the readLock, no thread can obtain the writeLock.
  * 
+ * We also have the tryLock() method, just like the ReentrantLock object has.
+ * 
  * In this example we simply add and read values ​​from a list protected by read
  * lock and write lock.
  * 
